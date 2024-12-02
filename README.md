@@ -5,9 +5,10 @@ The process of completing this project can be broken down into three main steps:
 - Cleaning the data  
 - Building and populating the tables  
 - Analyzing the data
+
 <br/>
 <br/>
-<br/>
+
 ## Phase #1: Cleaning the data
 In the first phase, I selected the datasets I considered useful for answering my questions. Then, using Excel, I verified the accuracy of the data, adjusted its format, and standardized the headers to make them easily readable by the DBMS. Finally, I ensured that essential columns, such as identifiers and IDs, were included.
 <br/>

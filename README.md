@@ -1,5 +1,6 @@
 # global-health-sustainability-analysis
 <br/>
+
 ## Phases of the project
 The process of completing this project can be broken down into three main steps:  
 - Cleaning the data  

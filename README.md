@@ -9,8 +9,9 @@ The process of completing this project can be broken down into three main steps:
 
 ## Phase #1: Cleaning the data
 In the first phase, I selected the datasets I considered useful for answering my questions. Then, using Excel, I verified the accuracy of the data, adjusted its format, and standardized the headers to make them easily readable by the DBMS. Finally, I ensured that essential columns, such as identifiers and IDs, were included.
+
 \
-\
+
 ## Phase #2: Building and populating the tables
 For this project, I selected 4 different datasets:
 - Country Codes Alpha-2 & Alpha-3: this table contains numeric and letter-based codes identifying each country.

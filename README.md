@@ -1,5 +1,4 @@
 # global-health-sustainability-analysis
-<br/>
 
 ## Phases of the project
 The process of completing this project can be broken down into three main steps:  
@@ -7,20 +6,15 @@ The process of completing this project can be broken down into three main steps:
 - Building and populating the tables  
 - Analyzing the data
 
-<br/>
-<br/>
-
 ## Phase #1: Cleaning the data
 In the first phase, I selected the datasets I considered useful for answering my questions. Then, using Excel, I verified the accuracy of the data, adjusted its format, and standardized the headers to make them easily readable by the DBMS. Finally, I ensured that essential columns, such as identifiers and IDs, were included.
-<br/>
-<br/>
-<br/>
+
 ## Phase #2: Building and populating the tables
 For this project, I selected 4 different datasets:
-- Country Codes Alpha-2 & Alpha-3: this table contains numeric and letter-based codes identifying each country.
-- Global Country Information Dataset 2023: this dataset holds demographic and geographic information, statistics regarding the economy, population, sustainability attitude, and more.
-- World Cities Air Quality and Water Pollution: this dataset has data on the quality of air and the level of water pollution in each country.
-- Global Data on Sustainable Energy (2000-2020): this dataset contains various statistics, most of them related to sustainability, for each country from 2000 to 2020.
+- **Country Codes Alpha-2 & Alpha-3**: this table contains numeric and letter-based codes identifying each country.
+- **Global Country Information Dataset 2023**: this dataset holds demographic and geographic information, statistics regarding the economy, population, sustainability attitude, and more.
+- **World Cities Air Quality and Water Pollution**: this dataset has data on the quality of air and the level of water pollution in each country.
+-**Global Data on Sustainable Energy (2000-2020)**: this dataset contains various statistics, most of them related to sustainability, for each country from 2000 to 2020.
 
 To upload the datasets into the DBMS, I first had to create tables with the same characteristics as the datasets. The queries that I used to create the tables can be found in the **create_tables.sql** file.
 
@@ -89,14 +83,15 @@ I structured this analysis to test my hypothesis, focusing only on the 5 countri
 **Note:** The percentile calculation was done by sorting the data in ascending order, with the poorest countries (those with the lowest GDP) corresponding to percentiles closest to 0.
 
 Query's output:
-       country_name       | percentile_by_gdp
---------------------------+-------------------
- Central African Republic |             13.11
- Lesotho                  |             14.21
- Sierra Leone             |             16.39
- Chad                     |             25.68
- Nigeria                  |             85.79
+|       country_name       | percentile_by_gdp |
+| -------------------------|:-----------------:|
+| Central African Republic |             13.11 |
+| Lesotho                  |             14.21 |
+| Sierra Leone             |             16.39 |
+| Chad                     |             25.68 |
+| Nigeria                  |             85.79 |
 
  #### Comments: 
+ 
 This analysis reveals a potential relation between health and wealth of countries. In particular, the 5 countries scoring lowest in the life_expectancy metric were also included in the 30% of the distribution with the lowest GDP. An interesting exception is Nigeria. Despite scoring extremely low in our reference health metric, Africa’s most-populated country showcases an outstandingly high GDP. This might reflect that, from an economic standpoint, Nigeria is moving upward, whereas it still has to overcome the burden of low health quality.
 

@@ -18,9 +18,10 @@ For this project, I selected 4 different datasets:
 
 To upload the datasets into the DBMS, I first had to create tables with the same characteristics as the datasets. The queries that I used to create the tables can be found in the **create_tables.sql** file.
 
-
 ## Phase #3: Data analysis
 To better illustrate the data analysis process I've decided to introduce the question and then describee the results and the insights gained.
+
+<br>
 
 ### Question #1: Which countries are the best and worst ranked in terms of healthcare (top/bottom 5 countries)?
 The queries used to investigate this question are listed in the **query_question_1.sql** file.
@@ -86,6 +87,7 @@ Interestingly, among the countries with the lowest infant mortality rate in the 
 
 In the ranking derived from this query, 4 out of 5 countries are also part of the list of countries with the lowest life expectancy. This result is highly informative, as it suggests a relationship between life expectancy and infant mortality. It’s not surprising to think that in a country with low life expectancy — meaning (according to our interpretation of this value) a low overall healthcare level — the proportion of infants who do not survive their first year of life would be high.
 
+<br>
 
 ### Question #3: Is there a relationship between healthcare levels and economic prosperity indicators?
 With this question, I aimed to investigate whether there is a relationship between healthcare levels, represented by _life expectancy_, and the _GDP_ of countries around the world. This question arose from my belief that countries with the lowest healthcare levels are also the poorest.
@@ -103,8 +105,9 @@ Query's output:
 | Chad                     |             25.68 |
 | Nigeria                  |             85.79 |
 
- #### Comments: 
- 
+#### Comments: 
 This analysis reveals a potential relation between health and wealth of countries. In particular, the 5 countries scoring lowest in the life_expectancy metric were also included in the 30% of the distribution with the lowest GDP. An interesting exception is Nigeria. Despite scoring extremely low in our reference health metric, Africa’s most-populated country showcases an outstandingly high GDP. This might reflect that, from an economic standpoint, Nigeria is moving upward, whereas it still has to overcome the burden of low health quality.
+
+<br>
 
 

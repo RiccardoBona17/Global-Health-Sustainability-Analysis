@@ -1,4 +1,3 @@
-<pre>
 # Global-Health-Sustainability-Analysis
 
 ## Phases of the project
@@ -52,6 +51,7 @@ The countries with the highest life expectancy values seem to be dominated by â€
 
 On the countries with the lowest life expectancy standards, not surprisingly, are all located in Africa, suggesting that the health levels within this continent are way below the standard. 
 
+<br>
 
 ### Question #2: Do these countries maintain their 5 best/worst positions when the healthcare indicator changes?
 With the second question, I wanted to check whether changing the public health indicator from _life expectancy_ to _infant mortality_ would result in the same rankings for the countries with the highest and lowest healthcare standards.
@@ -107,4 +107,4 @@ Query's output:
  
 This analysis reveals a potential relation between health and wealth of countries. In particular, the 5 countries scoring lowest in the life_expectancy metric were also included in the 30% of the distribution with the lowest GDP. An interesting exception is Nigeria. Despite scoring extremely low in our reference health metric, Africaâ€™s most-populated country showcases an outstandingly high GDP. This might reflect that, from an economic standpoint, Nigeria is moving upward, whereas it still has to overcome the burden of low health quality.
 
-<pre\>
+

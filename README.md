@@ -138,11 +138,11 @@ Data on countries' sustainable energy production and consumption were taken from
 To investigate the relationship between changes in renewable energy consumption and the GDP of countries on a global scale, I decided to classify each country based on the magnitude of the change (large positive/moderate positive/negative) and then calculate the average GDP for each sustainability category.
 
 **Sustainability class with associated average GDP**
-|   sustainability_trend   | aveerage_gdp_dollars |
+|   sustainability_trend   | average_gdp_dollars |
 | -------------------------|:--------------------:|
 |     Descrease            |   120153485340.84    |
 |  Moderate improvement    |   975439583699.55    |
-|  significant improvement |    97559168828.20    |
+|  Significant improvement |    97559168828.20    |
 
 **Comment:** This analysis reveals some interesting results. For example, countries with a "moderate improvement" (0–5% increase in the share of renewable energy in total energy consumption between 2016 and 2020) generated a higher average GDP in 2013 compared to the other two sustainability categories. This could imply that countries gradually increasing their use of renewable energy sources tend to have a high or moderate GDP. On the other hand, it is noteworthy that nations in the "significant improvement" category had an average GDP lower than those of the other two categories. This might suggest that prioritizing renewable energy usage could potentially lead to a reduction in a country’s productive efficiency. However, another possible interpretation of this result is that even countries without highly performing economies are capable of making significant shifts toward greater use of renewable resources.
 

@@ -58,7 +58,7 @@ With the second question, I wanted to check whether changing the public health i
 **What is the purpose of this analysis?** 
 The question behind this analysis was whether _life expectancy_ is truly a good metric for measuring the overall quality of healthcare across countries. In fact, a good general healthcare indicator should remain relatively consistent across metrics related to the health levels of citizens. The indicator I chose is _infant mortality_, which refers to the number of children who die within the first year of life per 1,000 births.
 
-The queries used to investigate this question are available in the**query_question_2.sql** file.
+The queries used to investigate this question are available in the **query_question_2.sql** file.
 
 **5 countries with the highest _infant mortality_ rate:**
 |        country_name        | infant_mortality_rate |
@@ -94,6 +94,8 @@ I structured this analysis to test my hypothesis, focusing only on the 5 countri
 
 **Note:** The percentile calculation was done by sorting the data in ascending order, with the poorest countries (those with the lowest GDP) corresponding to percentiles closest to 0.
 
+The query used to answer this question can be found in the **query_question_3.sql** file.
+
 Query's output:
 |       country_name       | percentile_by_gdp |
 | -------------------------|:-----------------:|
@@ -108,5 +110,41 @@ This analysis reveals a potential relation between health and wealth of countrie
 
 <br>
 
+### Question #4: Is there a connection between the air and water quality and life expectancy?
+Sticking around healthcare, which can be considered the central theme of this project, I asked myself whether the environment, and more specifically the resources it provides have an impact on the average life expectancy of countries around the world.
 
+In order to answer this question, I've leveraged data from the **World Cities Air Quality and Water Pollution** and **Country Codes Alpha-2 & Alpha-3** datasets. Besides, I've broken the question into two smaller queries:
+- What's the average life expectancy among those countries with the highest air and water quality?
+- What's the average life expectancy among those countries with the lowest air and water quality?
+
+The query that answers these two questions is illustrated in the **query_question_4.sql** file.
+
+**Note:** while the air quality index goes 0-100 with the highest numbers indicating the better air quality, the water pollution index works the opposite, with the lowest numbers representing a higher water quality (lower presence of pollution).
+
+This note leads us to explaining the threshold I've set to determine the high and low-air and water quality levels. I've decided that air quality levels above 75 correspond to HIGH AIR QUALITY, whereas levels below 25 are deemed LOW AIR QUALITY levels. Contrarily, HIGH WATER QUALITY levels coincide with values below 25, though values above 75 represent LOW WATER QUALITY levels.
+
+**Average life expectancy in countries with LOW air and water quality**: 61.77
+**Average life expectancy in countries with HIGH air and water quality**: 77.98
+
+**Comment:** It's clear the presence of a difference between the average life expectancy among countries with different quality of environmental resources, however this isn't enough to confirm our hypothesis. To be sure that the environmental health acutally plays a role in determining the living years of a countries inhabitants we would need to conduct a statistical test to evaluate if the difference is significant.
+
+<br>
+
+### Question #5: Is there a relation between the change in sustainability measures between 2016-2020 and the GDP of countries?
+After a fairly comprehensive investigation of healthcare across countries around the world, I wanted to focus on another topic: **sustainable energy**.
+
+Data on countries' sustainable energy production and consumption were taken from the **Global Data on Sustainable Energy (2000-2020)** dataset. In particular, I focused my attention on countries' share of renewable energy over the total energy consumption (_renewable_energy_share_over_total_energy_consumption_). This field can be helpful in understanding **how** and **whether** countries made changes to their energy consumption regimes following the adoption of the UN's 2015 program, _Agenda 2030_.
+
+To investigate the relationship between changes in renewable energy consumption and the GDP of countries on a global scale, I decided to classify each country based on the magnitude of the change (large positive/moderate positive/negative) and then calculate the average GDP for each sustainability category.
+
+**Sustainability class with associated average GDP**
+|   sustainability_trend   | aveerage_gdp_dollars |
+| -------------------------|:--------------------:|
+|     Descrease            |   120153485340.84    |
+|  Moderate improvement    |   975439583699.55    |
+|  significant improvement |    97559168828.20    |
+
+**Comment:** This analysis reveals some interesting results. For example, countries with a "moderate improvement" (0–5% increase in the share of renewable energy in total energy consumption between 2016 and 2020) generated a higher average GDP in 2013 compared to the other two sustainability categories. This could imply that countries gradually increasing their use of renewable energy sources tend to have a high or moderate GDP. On the other hand, it is noteworthy that nations in the "significant improvement" category had an average GDP lower than those of the other two categories. This might suggest that prioritizing renewable energy usage could potentially lead to a reduction in a country’s productive efficiency. However, another possible interpretation of this result is that even countries without highly performing economies are capable of making significant shifts toward greater use of renewable resources.
+
+To deepen this analysis, we would need data describing changes in GDP during the 2016–2020 period. Additionally, it would be interesting to study how these figures have evolved from 2020 to the present day.
 

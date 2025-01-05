@@ -25,8 +25,8 @@ To better illustrate the data analysis process I've decided to introduce the que
 ### Question #1: Which countries are the best and worst ranked in terms of healthcare (top/bottom 5 countries)?
 The queries used to investigate this question are listed in the **query_question_1.sql** file.
 
-Top 5 countries for healthcare quality:
-|     country_name     | expected_living_years |
+**Top 5 countries for healthcare quality:**
+|     country_name     | expected_living_years |     
 | ---------------------|:---------------------:|
 | San Marino           |                  85.4 |
 | Japan                |                  84.2 |
@@ -35,26 +35,19 @@ Top 5 countries for healthcare quality:
 | Singapore            |                  83.1 |
 
 
-
-
-
-- San Marino
-- Japan
-- Switzerland
-- Spain
-- Singapore
-
-Bottom 5 countries for healthcare quality:
-- Central African Republic
-- Lesotho
-- Chad
-- Nigeria
-- Sierra Leone 
+**Bottom 5 countries for healthcare quality:**
+|        country_name        | expected_living_years |
+| ---------------------------|:---------------------:|
+| Central African Republic   |                  52.8 |
+| Lesotho                    |                  53.7 |
+| Chad                       |                  54   |
+| Nigeria                    |                  54.3 |
+| Sierra Leone               |                  54.3 |
 
 #### Comments:
 The countries with the highest life expectancy values seem to be dominated by ‘small’ countries, for example San Marino, Switzerland, and Singapore. However, two of the five countries can be considered pretty extended, this is the case of Spain, and Japan.
 
-**Interesting follow-up question:**At this point, an interesting follow-up question could be: Does the extent of the country (in Km^2) has something to do with the life expectancy levels? Is there a correlation? What about the size of the population?
+**Interesting follow-up question:** At this point, an interesting follow-up question could be: Does the extent of the country (in Km^2) has something to do with the life expectancy levels? Is there a correlation? What about the size of the population?
 
 On the countries with the lowest life expectancy standards, not surprisingly, are all located in Africa, suggesting that the health levels within this continent are way below the standard. 
 
@@ -67,19 +60,25 @@ The question behind this analysis was whether _life expectancy_ is truly a good 
 
 The queries used to investigate this question are available in the**query_question_2.sql** file.
 
-5 countries with the highest _infant mortality_ rates:
-- Central African Republic
-- Sierra Leone
-- Somalia
-- Nigeria
-- Chad
+**5 countries with the highest _infant mortality_ rate:**
+|        country_name        | infant_mortality_rate |
+| ---------------------------|:---------------------:|
+| Central African Republic   |                  84.5 |
+| Sierra Leone               |                  78.5 |
+| Somalia                    |                  76.6 |
+| Nigeria                    |                  75.7 |
+| Chad                       |                  71.4 |
 
-5 countries with the lowest _infant mortality_ rates:
-- Finland
-- Iceland
-- San Marino
-- Slovenia 
-- Japan
+
+**5 countries with the lowest _infant mortality_ rate:**
+|     country_name     | infant_mortality_rate |
+| ---------------------|:---------------------:|
+| Finland              |                   1.4 |
+| Iceland              |                   1.5 |
+| San Marino           |                   1.7 |
+| Slovenia             |                   1.7 |
+| Japan                |                   1.8 |
+
 
 #### Comments:
 Interestingly, among the countries with the lowest infant mortality rate in the first year of life are San Marino and Japan, which also appeared in the ranking of the 5 countries with the highest life expectancy. Finland and Iceland are two other countries present in the result of this last query, along with, surprisingly, Slovenia.

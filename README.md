@@ -1,4 +1,4 @@
-# global-health-sustainability-analysis
+# Global-Health-Sustainability-Analysis
 
 ## Phases of the project
 The process of completing this project can be broken down into three main steps:  
@@ -26,6 +26,18 @@ To better illustrate the data analysis process I've decided to introduce the que
 The queries used to investigate this question are listed in the **query_question_1.sql** file.
 
 Top 5 countries for healthcare quality:
+|     country_name     | expected_living_years |
+| ---------------------|:---------------------:|
+| San Marino           |                  85.4 |
+| Japan                |                  84.2 |
+| Switzerland          |                  83.6 |
+| Spain                |                  83.3 |
+| Singapore            |                  83.1 |
+
+
+
+
+
 - San Marino
 - Japan
 - Switzerland

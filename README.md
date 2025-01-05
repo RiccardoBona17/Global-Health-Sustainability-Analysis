@@ -52,6 +52,7 @@ The countries with the highest life expectancy values seem to be dominated by â€
 On the countries with the lowest life expectancy standards, not surprisingly, are all located in Africa, suggesting that the health levels within this continent are way below the standard. 
 
 
+
 ### Question #2: Do these countries maintain their 5 best/worst positions when the healthcare indicator changes?
 With the second question, I wanted to check whether changing the public health indicator from _life expectancy_ to _infant mortality_ would result in the same rankings for the countries with the highest and lowest healthcare standards.
 

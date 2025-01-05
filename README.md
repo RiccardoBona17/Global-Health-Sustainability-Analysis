@@ -21,8 +21,6 @@ To upload the datasets into the DBMS, I first had to create tables with the same
 ## Phase #3: Data analysis
 To better illustrate the data analysis process I've decided to introduce the question and then describee the results and the insights gained.
 
-<br>
-
 ### Question #1: Which countries are the best and worst ranked in terms of healthcare (top/bottom 5 countries)?
 The queries used to investigate this question are listed in the **query_question_1.sql** file.
 
